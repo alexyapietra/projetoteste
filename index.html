@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class-"container">
+        <h1>Conversor de Temperatura</h1>
+        <label for="temp"Digite a temperatura:></label>
+        <input type="number" id="temp" placeholder="Ex:25" required>
 
-    </header>
+        <select id="unit">
+            <option value="Celsius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+<       /select>
 
-    <main>
+            <button onclick="convertTemperature()">Converter</button>
 
-    </main>
+            <h2>Resultado</h2>
+            <p id="result"></p></p>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 - Todos os direitos reservados.</p>
-        <p>Desenvolvido por Aléxya Pietra</p>
-        <p><a href="
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
