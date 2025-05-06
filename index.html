@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Temperatura</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel=stylesheet href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class-"container">
-        <h1>Conversor de Temperatura</h1>
-        <label for="temp"Digite a temperatura:></label>
-        <input type="number" id="temp" placeholder="Ex:25" required>
+    
+    <div class ="wrapper">
+        <form method="post">
+            <h1>Login</h1>
+            <div class="inputBox">
+                <input type="text" placeholder="usuário" required>
+                <i class="bx bx-user"></i>
+            </div>
 
-        <select id="unit">
-            <option value="Celsius">Celcius</option>
-            <option value="Fahrenheit">Fahrenheit</option>
-            <option value="Kelvin">Kelvin</option>
-<       /select>
+            <div class="inputBox">
+                <input type="password" placeholder="senha" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
 
-            <button onclick="convertTemperature()">Converter</button>
+            <div class="remember-forget">
+                <label><input type="checkbox">Lembrar de mim</label>
+                <a href="forgot.html">Esqueci minha senha?</a>
+            </div>
 
-            <h2>Resultado</h2>
-            <p id="result"></p></p>
+            <button type="submit" class="btn">Entrar</button>
+
+            <div class="register-link">
+                <p>
+                    Ainda não tem uma conta?
+                    <a href="registrar.html">Registre-se!</a>
+                </p>
+            </div>
+                
+        </form>
     </div>
-
-    <script src="script.js"></script>
+        
 </body>
 </html>
